@@ -16,6 +16,7 @@ Open SQL Server Management Studio
 Create a new database named YourDatabaseName
 
 Execute the SQL scripts from DatababaseScripts folder in order.
+
 EmployeeCRUD/
 
 ├── DatabaseScripts/
