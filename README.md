@@ -13,8 +13,4 @@ Database Setup
 Open SQL Server Management Studio
 Create a new database named YourDatabaseName
 Execute the SQL scripts from DatababaseScripts folder in order:
-EmployeeCRUD/
-├── DatabaseScripts/
-│   ├── 01_CreateTables.sql
-│   └── 02_SeedData.sql
 
