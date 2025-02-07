@@ -1,0 +1,17 @@
+﻿@model Department
+<div class="container">
+	<h2>Add Department</h2>
+	<form asp-action="Create"method="post">
+		@* <input asp-for="DepartmentID" type="hidden" /> *@
+
+		<div class="form-group">
+			<label asp-for="DepartmentName">Name</label>
+			<input asp-for="DepartmentName" class="form-control" required />
+		</div>
+		<button type="submit" class="btn btn-primary">
+			Add Employee
+		</button>
+		<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+
+	</form>
+</div>

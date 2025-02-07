@@ -1,0 +1,37 @@
+﻿@model EmployeeDTO
+
+<div class="container">
+    <h2>@(Model.EmployeeID == 0 ? "Add New" : "Edit") Employee</h2>
+    <form asp-action="CreateOrUpdate" method="post">
+        <input asp-for="EmployeeID" type="hidden" />
+
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DepartmentId">Department</label>
+            <select asp-for="DepartmentId" class="form-control"
+                    asp-items="@(new SelectList(ViewBag.Departments, "DepartmentID", "DepartmentName"))"
+                    required>
+                <option value="">Select Department</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Salary">Salary</label>
+            <input asp-for="Salary" type="number" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateOfJoining">Date of Joining</label>
+            <input asp-for="DateOfJoining" type="date" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            @(Model.EmployeeID == 0 ? "Add" : "Update") Employee
+        </button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
