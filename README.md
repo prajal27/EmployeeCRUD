@@ -1,5 +1,4 @@
-
-##Dapper CRUD MVC Project
+#Dapper CRUD MVC Project
 
 Description
 A CRUD (Create, Read, Update, Delete) application built using ASP.NET MVC and Dapper ORM.
@@ -14,4 +13,8 @@ Database Setup
 Open SQL Server Management Studio
 Create a new database named YourDatabaseName
 Execute the SQL scripts from DatababaseScripts folder in order:
+EmployeeCRUD/
+├── DatabaseScripts/
+│   ├── 01_CreateTables.sql
+│   └── 02_SeedData.sql
 
